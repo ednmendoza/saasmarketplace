@@ -1,0 +1,142 @@
+{
+  "project_name": "SaaS & Software Enterprise Marketplace Dashboard",
+  "app_type": "dashboard",
+  "theme": "light",
+  "emotional_archetype": "ARCHETYPE 4: SWISS & HIGH-CONTRAST / ARCHETYPE 1: ORGANIC & PROFESSIONAL",
+  "design_identity": {
+    "concept": "Corporate SaaS Ecosystem & Integration Directory",
+    "vibe": "Clean, light, ultra-crisp, administrative precision, frictionless discovery",
+    "tone": "Professional, authoritative, high-density, accessible, modern enterprise"
+  },
+  "typography": {
+    "font_family_heading": "Plus Jakarta Sans, Outfit, Cabinet Grotesk, sans-serif",
+    "font_family_body": "Inter, system-ui, sans-serif",
+    "font_family_mono": "JetBrains Mono, Source Code Pro, monospace",
+    "scale": {
+      "h1": "text-3xl sm:text-4xl font-bold tracking-tight text-slate-900",
+      "h2": "text-xl sm:text-2xl font-semibold tracking-tight text-slate-900",
+      "h3": "text-lg font-semibold text-slate-900",
+      "h4": "text-base font-medium text-slate-800",
+      "body": "text-sm text-slate-600 leading-relaxed",
+      "caption": "text-xs font-medium text-slate-500 tracking-wide uppercase"
+    },
+    "forbidden_fonts": ["Space Grotesk", "Comic Sans", "Papyrus"]
+  },
+  "colors": {
+    "base": {
+      "bg_app": "#F8FAFC",
+      "bg_card": "#FFFFFF",
+      "bg_muted": "#F1F5F9",
+      "bg_subtle": "#F8FAFC",
+      "border": "#E2E8F0",
+      "border_hover": "#CBD5E1",
+      "text_primary": "#0F172A",
+      "text_secondary": "#475569",
+      "text_muted": "#64748B"
+    },
+    "brand": {
+      "primary": "#2563EB",
+      "primary_hover": "#1D4ED8",
+      "primary_light": "#EFF6FF",
+      "accent": "#0EA5E9",
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "error": "#EF4444",
+      "forbidden_color": "#1B93A4"
+    },
+    "category_badges": {
+      "DevOps": "bg-indigo-50 text-indigo-700 border-indigo-200",
+      "Analytics": "bg-emerald-50 text-emerald-700 border-emerald-200",
+      "Productivity": "bg-amber-50 text-amber-700 border-amber-200",
+      "Security": "bg-rose-50 text-rose-700 border-rose-200",
+      "Design": "bg-purple-50 text-purple-700 border-purple-200",
+      "Communication": "bg-blue-50 text-blue-700 border-blue-200",
+      "CRM & Sales": "bg-orange-50 text-orange-700 border-orange-200",
+      "AI Tools": "bg-cyan-50 text-cyan-700 border-cyan-200"
+    }
+  },
+  "layout_and_spacing": {
+    "density": "High Density Grid (MODE B)",
+    "container_padding": "p-4 sm:p-6 lg:p-8",
+    "card_padding": "p-5 sm:p-6",
+    "gap": "gap-4 sm:gap-6",
+    "grid_columns": {
+      "stats": "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4",
+      "marketplace": "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4",
+      "details_modal": "grid grid-cols-1 lg:grid-cols-12 gap-6"
+    },
+    "sidebar": "w-64 flex-shrink-0 bg-white border-r border-slate-200 hidden md:block"
+  },
+  "components_and_structure": {
+    "header": "Clean white header with search input, notifications toggle, admin authentication modal trigger, and tenant switcher.",
+    "stats_bar": "4 high-impact metric widgets displaying: Total Apps, Active Integrations, Categories, and Average User Rating with mini trend sparks.",
+    "filters_bar": "Category chip filters, pricing tier filter (Free, Freemium, Paid, Enterprise), sorting dropdown (Popularity, Recently Added, Rating, A-Z), search input, and layout switcher (Grid / List).",
+    "app_card": "Minimalist surface card with app SVG/PNG logo, title, category badge, rating star count, verified tag, brief description, key tags, status (Integrated / Available), and Quick View button.",
+    "app_detail_drawer_modal": "Comprehensive overlay featuring app hero section, screenshot carousel, feature bullet points, system requirements/compliance (SOC2, GDPR), active installation count, user reviews summary, documentation links, and 'Request Install' or 'Launch App' action.",
+    "admin_catalog_management": "Admin-only drawer/modal allowing manual app entry OR 'AI Auto-Fill Generator' (enters App Name/URL -> simulates LLM extraction to auto-populate logo, tags, description, pricing, and features).",
+    "sample_data": "Preloaded with 16 top enterprise SaaS apps (Slack, Notion, HubSpot, Figma, GitHub, Stripe, Datadog, Zendesk, Salesforce, Postman, Jira, Loom, Zoom, Vercel, Linear, Framer)."
+  },
+  "motion_and_interactions": {
+    "library": "framer-motion",
+    "hover_effects": "Hover lift -translate-y-1 shadow-md transition-all duration-200 border-slate-300",
+    "entrance_animations": "Staggered grid fade-in for app cards (delay 0.05s per item)",
+    "modal_transitions": "Scale up 0.95 -> 1.0 with backdrop blur backdrop-blur-sm",
+    "micro_interactions": "Bookmark toggle button, install state change pulse, toast notification on copy link / request install"
+  },
+  "icons": {
+    "library": "lucide-react",
+    "preferred_icons": [
+      "Search", "Filter", "Plus", "ShieldCheck", "Star", "ExternalLink",
+      "LayoutGrid", "List", "Sparkles", "CheckCircle2", "Layers", "Building2",
+      "Download", "Settings", "SlidersHorizontal", "Check", "Zap", "Lock"
+    ]
+  },
+  "media_urls": {
+    "dashboards": [
+      {
+        "url": "https://images.unsplash.com/photo-1786340436214-76fd497c650b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwzfHxzYWFzJTIwc29mdHdhcmUlMjBsb2dvJTIwdGVjaG5vbG9neSUyMGRhc2hib2FyZHxlbnwwfHx8fDE3ODcxNzg3NTB8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Marketing metrics SaaS dashboard screenshot"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwxfHxzYWFzJTIwc29mdHdhcmUlMjBsb2dvJTIwdGVjaG5vbG9neSUyMGRhc2hib2FyZHxlbnwwfHx8fDE3ODcxNzg3NTB8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Analytics monitoring screen view"
+      },
+      {
+        "url": "https://images.pexels.com/photos/5380618/pexels-photo-5380618.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Cybersecurity & data protection SaaS interface"
+      }
+    ]
+  },
+  "testing_requirements": {
+    "data_testid_convention": "kebab-case, role-based",
+    "mandatory_test_ids": [
+      "app-header",
+      "search-input",
+      "category-filter-all",
+      "stats-overview-total-apps",
+      "stats-overview-active-integrations",
+      "app-grid",
+      "app-card-slack",
+      "app-card-notion",
+      "app-detail-modal",
+      "admin-login-button",
+      "admin-mode-toggle",
+      "add-app-button",
+      "ai-autofill-button",
+      "app-form-name-input",
+      "app-form-submit-button",
+      "request-install-button",
+      "app-view-toggle-grid",
+      "app-view-toggle-list"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Build a pristine light-theme enterprise SaaS marketplace dashboard in React.",
+    "Provide complete search, filtering by category/pricing/status, and live sorting.",
+    "Implement an App Details drawer/modal with screenshot gallery, feature breakdown, ratings, and install workflow.",
+    "Implement Admin Mode toggle & modal with manual app creation AND simulated AI-assisted auto-fill that populates form fields with standard metadata upon entering an app name or site URL.",
+    "Preload 16 realistic SaaS applications (Slack, Notion, Figma, GitHub, Stripe, HubSpot, Datadog, Salesforce, Zendesk, Postman, Jira, Loom, Zoom, Vercel, Linear, Framer) complete with SVG logos, tags, ratings, and installation status.",
+    "Strictly follow data-testid naming for key interactive components.",
+    "Use sonner for instant toast feedback on actions (Install requested, App created, AI auto-fill complete)."
+  ]
+}
